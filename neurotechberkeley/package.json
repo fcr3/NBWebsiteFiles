@@ -1,0 +1,26 @@
+{
+  "name": "neurotechberkeley",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcr3/NBWebsiteFiles.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcr3/NBWebsiteFiles/issues"
+  },
+  "author": "Flaviano Christian Reyes",
+  "homepage": "https://github.com/fcr3/NBWebsiteFiles#readme"
+}
