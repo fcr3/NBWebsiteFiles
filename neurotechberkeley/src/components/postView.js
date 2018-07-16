@@ -20,7 +20,7 @@ class postView extends Component {
 
     return (
       <div>
-        <Route path="/posts" component={() => (<div><ul>{renderedPosts}</ul></div>)} />
+        <Route exact path="/posts" component={() => (<div><ul>{renderedPosts}</ul></div>)} />
       </div>
     );
   }
