@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Link, Route, Redirect} from 'react-router-dom';
+import postView from './components/postView';
 
 class App extends Component {
   render() {
@@ -8,11 +10,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Patrick's A Bitch</h1>
+          <h1 className="App-title">Testing</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p> <Link to="/posts">Click here to see cells</Link> </p>
+        <Route path="/posts" component={postView} />
+        <Route exact path="/" render={() => <Redirect to="/posts" />} />
       </div>
     );
   }

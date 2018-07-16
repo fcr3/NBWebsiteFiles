@@ -3,6 +3,9 @@ import {database} from '../database/config';
 export const GET_POSTS = "GET_POSTS";
 
 function handleReceivedPosts(posts) {
+  if (posts === undefined || posts === null) {
+    posts = [];
+  }
   return {
     type: GET_POSTS,
     posts

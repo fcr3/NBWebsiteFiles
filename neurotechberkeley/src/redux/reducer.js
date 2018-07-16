@@ -7,7 +7,7 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case GET_POSTS:
-      return {posts: ...action.posts};
+      return {posts: [...action.posts]};
     default:
       return state;
   }
