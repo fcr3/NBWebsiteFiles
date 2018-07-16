@@ -5,9 +5,6 @@ import {getPosts} from '../redux/actions';
 import {Route} from 'react-router-dom';
 
 class postView extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentDidMount() {
     this.props.getPosts();
