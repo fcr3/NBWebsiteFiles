@@ -1,0 +1,62 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+
+
+.homepage {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  z-index: 1;
+  font-size: 5vmax;
+}
+
+.motto {
+  z-index: 1;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2vmax;
+}
+
+.welcomepane {
+  color: white;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.particles {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0B6172;
+  z-index: 0;
+}
+
+.simpleaboutpane {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

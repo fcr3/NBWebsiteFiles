@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: auto;
+}
+
+.App-logo {
+  height: 4vmin;
+  width: auto;
+}
+
+.menuiconbar {
+  height: 2vmin;
+  width: 2vmin;
+}
+
+.App-header {
+  z-index: 10;
+  border-bottom: 4px solid white;
+  position: fixed;
+  background-color: #0B6172;
+  height: 3vh;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 850px) {
+  .App-logo {
+    height: 6vmin;
+    width: auto;
+  }
+
+  .menuiconbar {
+    height: 3vmin;
+    width: 3vmin;
+  }
+}
+
+@media screen and (max-width: 800px) or (max-height: 1050px) {
+  .App-logo {
+    height: 6vmin;
+    width: auto;
+  }
+
+  .menuiconbar {
+    height: 3vmin;
+    width: 3vmin;
+  }
+}
+
+@media screen and
+
+@media screen and (max-width: 640px) {
+  .App-logo {
+    height: 9vmin;
+    width: auto;
+  }
+
+  .menuiconbar {
+    height: 5vmin;
+    width: 5vmin;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .App-logo {
+    height: 9vmin;
+    width: auto;
+  }
+
+  .menuiconbar {
+    height: 5vmin;
+    width: 5vmin;
+  }
+}
