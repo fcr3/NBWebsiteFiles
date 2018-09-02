@@ -9,25 +9,29 @@ font-family: 'Open Sans Condensed', sans-serif;
   height: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   overflow-x: hidden;
 }
 
 .title {
   font-family: 'Open Sans', sans-serif;
-  z-index: 1;
+  z-index: 2;
   font-size: 5vmax;
+  opacity: 1;
 }
 
 .motto {
-  z-index: 1;
+  z-index: 2;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2vmax;
+  opacity: 1;
 }
 
 .welcomepane {
+  overflow: hidden;
   color: white;
+  background-color: #0B6172;
   position: relative;
   z-index: 2;
   height: 100vh;
@@ -46,17 +50,98 @@ font-family: 'Open Sans Condensed', sans-serif;
   width: 100vw;
   height: 100vh;
   background-color: #0B6172;
+  background-image: url('../assets/bigbrain.jpg');
+  background-position: center;
+  opacity: 0.6;
   z-index: 0;
 }
 
 .simpleaboutpane {
+  overflow-x: hidden;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   background-color: white;
   display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.aboutcontent {
+  height: 100vh;
+  width: 40vw;
+  overflow-x: hidden;
+  z-index: 2;
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  align-content: flex-start;
   justify-content: center;
+}
+
+.aboutdescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.neuronpic {
+  align-items: center;
+}
+
+.homesubheading {
+  border-left: 4px solid #0B6172;
+  padding-left: 16px;
+  font-size: 4vmax;
+}
+
+.homewords {
+  font-size: 1.25vmax;
+  text-align: left;
+  width: 85%;
+}
+
+.neurons {
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1410px) {
+  .simpleaboutpane {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .neurons {
+    width: 40vmax;
+  }
+
+  .aboutcontent {
+    width: 100vw;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: auto;
+    padding-bottom: 32px;
+  }
+
+  .homewords {
+    font-size: 2.35vmax;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .homewords {
+    font-size: 2vmax;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px ) {
+  .aboutcontent {
+    width: 90vw;
+  }
 }
