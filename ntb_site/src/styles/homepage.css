@@ -56,6 +56,8 @@ font-family: 'Open Sans Condensed', sans-serif;
   z-index: 0;
 }
 
+/** About CSS */
+
 .simpleaboutpane {
   overflow-x: hidden;
   position: relative;
@@ -110,6 +112,107 @@ font-family: 'Open Sans Condensed', sans-serif;
   height: auto;
 }
 
+/** Staff CSS */
+
+.staff {
+  overflow: hidden;
+  height: auto;
+  background-color: #e8e8e8;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 64px;
+}
+
+.staffcontent {
+  overflow: hidden;
+  height: auto;
+  width: 90vw;
+  overflow-x: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.staffmember {
+  overflow: hidden;
+  min-height: 400px;
+  height: 60vh;
+  max-height: 500px;
+  width: 17vw;
+  min-width: 250px;
+  background-color: #0B6172;
+  border: 4px solid white;
+  margin: 0px 32px 32px 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.staffmember:hover {
+  border: 4px solid #0B6172;
+}
+
+.kayla {
+  background-image: url('../assets/kayla.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+.mridula {
+  background-image: url('../assets/mridula.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+.ashton {
+  background-image: url('../assets/ashton.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+.aditya {
+  background-image: url('../assets/aditya.jpg');
+  background-position: 45% 50%;
+  background-size: cover;
+}
+
+.staffinfo {
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  font-size: 1.5vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  font-weight: bold;
+}
+
+.socialmedia {
+  margin-top: 12px;
+  width: 50%;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sm {
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
+}
+
 @media screen and (max-width: 1410px) {
   .simpleaboutpane {
     flex-direction: column;
@@ -131,6 +234,10 @@ font-family: 'Open Sans Condensed', sans-serif;
   .homewords {
     font-size: 2.35vmax;
   }
+
+  .staffinfo {
+    font-size: 2.25vmax;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -138,10 +245,18 @@ font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2vmax;
     width: 90%;
   }
+
+  .staffinfo {
+    font-size: 3vmax;
+  }
 }
 
 @media screen and (max-width: 500px ) {
   .aboutcontent {
     width: 90vw;
+  }
+
+  .staffinfo {
+    font-size: 4vmax;
   }
 }

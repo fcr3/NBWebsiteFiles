@@ -19,6 +19,10 @@ font-family: 'Open Sans Condensed', sans-serif;
   width: 2vmin;
 }
 
+.menuiconbar:hover {
+  cursor: pointer;
+}
+
 .App-header {
   z-index: 10;
   border-bottom: 4px solid white;
@@ -36,6 +40,81 @@ font-family: 'Open Sans Condensed', sans-serif;
   justify-content: space-between;
 }
 
+/** Menu CSS */
+
+.sidemenu {
+  overflow: hidden;
+  z-index: 11;
+  position: fixed;
+  border-left: 4px solid white;
+  right: -4px;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #053764;
+  color: white;
+  transition: width 1s;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2vmax;
+}
+
+.appear {
+  width: 320px;
+  border-left: 4px solid white;
+  transition: width 1s;
+}
+
+.menulink {
+  width: 320px;
+  height: 15vmin;
+  border-top: 4px solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.menutab {
+  width: 320px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 4px solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 16px;
+}
+
+.menutab:first-of-type {
+  border-top: 0px;
+  height: 72px;;
+  padding-top:0;
+  padding-bottom: 0;
+}
+
+.menulink:nth-of-type(1) {
+  border-top: 0px;
+}
+
+.menulink:last-of-type {
+  border-bottom: 4px solid white;
+}
+
+.menuexit {
+  height: 32px;
+  width: 32px;
+  transform: rotate(180deg);
+}
+
+.menuexit:hover {
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 850px) {
   .App-logo {
     height: 6vmin;
@@ -45,6 +124,10 @@ font-family: 'Open Sans Condensed', sans-serif;
   .menuiconbar {
     height: 3vmin;
     width: 3vmin;
+  }
+
+  .sidemenu {
+    font-size: 3vmax;
   }
 }
 
@@ -58,9 +141,11 @@ font-family: 'Open Sans Condensed', sans-serif;
     height: 3vmin;
     width: 3vmin;
   }
-}
 
-@media screen and
+  .sidemenu {
+    font-size: 3vmax;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .App-logo {
@@ -71,6 +156,10 @@ font-family: 'Open Sans Condensed', sans-serif;
   .menuiconbar {
     height: 5vmin;
     width: 5vmin;
+  }
+
+  .sidemenu {
+    font-size: 3vmax;
   }
 }
 
@@ -83,5 +172,30 @@ font-family: 'Open Sans Condensed', sans-serif;
   .menuiconbar {
     height: 5vmin;
     width: 5vmin;
+  }
+
+  .appear {
+    width: 100vw;
+    border-left: 4px solid white;
+    transition: width 1s;
+  }
+
+  .menulink {
+    margin-left: 24px;
+    width: 80%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 4px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 16px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .sidemenu {
+    font-size: 4vmax;
   }
 }
