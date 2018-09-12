@@ -1,6 +1,7 @@
 /*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Righteous', cursive;
 */
 
 
@@ -14,8 +15,19 @@ font-family: 'Open Sans Condensed', sans-serif;
   overflow-x: hidden;
 }
 
+@keyframes entrance {
+  from {
+    opacity: 0;
+    margin-bottom: 12px;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
 .title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Righteous', cursive;
   z-index: 2;
   font-size: 5vmax;
   opacity: 1;
@@ -49,10 +61,10 @@ font-family: 'Open Sans Condensed', sans-serif;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #0B6172;
+  background-color: #51c3c5;/*#0B6172;*/
   background-image: url('../assets/bigbrain.jpg');
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.5;
   z-index: 0;
 }
 
@@ -96,7 +108,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .homesubheading {
-  border-left: 4px solid #0B6172;
+  border-left: 4px solid #055869;
   padding-left: 16px;
   font-size: 4vmax;
 }
@@ -155,7 +167,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .staffmember:hover {
-  border: 4px solid #0B6172;
+  border: 4px solid #055869;
 }
 
 .kayla {

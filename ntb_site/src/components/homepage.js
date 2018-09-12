@@ -23,14 +23,15 @@ class HomePage extends Component {
     const particles = (<Particles className="particles" params={params} />);
     const description = (<p className="motto">
       a vibrant neurotechnology community at uc berkeley<br></br>
-      first infosession on 9/11 @ wheeler 224 from 8-9pm
+      first infosession on 9/11 @ wheeler 224 from 8-9pm<br></br>
+      look for more events on facebook
     </p>);
 
     return (
       <div className="homepage">
 
         <div className="welcomepane">
-          <h1 className="title">neurotech @ berkeley </h1>
+          <h1 className="title">NEUROTECH@BERKELEY </h1>
           {description}
           {particles}
         </div>
