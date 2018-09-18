@@ -31,8 +31,10 @@ class HomePage extends Component {
       <div className="homepage">
 
         <div className="welcomepane">
-          <h1 className="title">NEUROTECH@BERKELEY </h1>
-          {description}
+          <div className="welcomewords">
+            <h1 className="title"><span>NEUROTECH</span>@<span>BERKELEY</span></h1>
+            {description}
+          </div>
           {particles}
         </div>
 
@@ -68,7 +70,7 @@ class HomePage extends Component {
           <div className="staffcontent">
             <div className="staffmember kayla">
               <div className="staffinfo">
-                Kayla
+                Kayla - Internal VP
                 <div className="socialmedia">
                   <a href="https://www.linkedin.com/"><img className="sm" src={linkedin} alt="in" /></a>
                   <a href="https://www.facebook.com/"><img className="sm" src={facebook} alt="fb" /></a>
@@ -78,7 +80,7 @@ class HomePage extends Component {
             </div>
             <div className="staffmember mridula">
               <div className="staffinfo">
-                Mridula
+                Mridula - Treasurer
                 <div className="socialmedia">
                   <a href="https://www.linkedin.com/"><img className="sm" src={linkedin} alt="in" /></a>
                   <a href="https://www.facebook.com/"><img className="sm" src={facebook} alt="fb" /></a>
@@ -98,7 +100,7 @@ class HomePage extends Component {
             </div>
             <div className="staffmember aditya">
               <div className="staffinfo">
-                Aditya
+                Aditya - President
                 <div className="socialmedia">
                   <a href="https://www.linkedin.com/"><img className="sm" src={linkedin} alt="in" /></a>
                   <a href="https://www.facebook.com/"><img className="sm" src={facebook} alt="fb" /></a>

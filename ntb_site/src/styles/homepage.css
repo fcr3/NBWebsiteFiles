@@ -31,6 +31,13 @@ font-family: 'Righteous', cursive;
   z-index: 2;
   font-size: 5vmax;
   opacity: 1;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .motto {
@@ -52,6 +59,16 @@ font-family: 'Righteous', cursive;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.welcomewords {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .particles {
@@ -253,6 +270,14 @@ font-family: 'Righteous', cursive;
 }
 
 @media screen and (max-width: 800px) {
+  .title {
+    flex-direction: column;
+  }
+
+  .motto {
+    font-size: 2.5vmax;
+  }
+
   .homewords {
     font-size: 2vmax;
     width: 90%;
@@ -264,6 +289,15 @@ font-family: 'Righteous', cursive;
 }
 
 @media screen and (max-width: 500px ) {
+  .title {
+    flex-direction: column;
+    font-size: 7vmax;
+  }
+
+  .motto {
+    font-size: 2.5vmax;
+  }
+
   .aboutcontent {
     width: 90vw;
   }
