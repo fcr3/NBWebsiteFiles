@@ -53,7 +53,7 @@ font-family: 'Open Sans Condensed', sans-serif;
   height: 100vh;
   background-color: #0B2041;
   color: white;
-  transition: width 1s;
+  transition: width 0.4s;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2vmax;
 }
@@ -61,7 +61,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 .appear {
   width: 320px;
   border-left: 4px solid white;
-  transition: width 1s;
+  transition: width 0.5s;
 }
 
 .menulink {
@@ -177,7 +177,7 @@ font-family: 'Open Sans Condensed', sans-serif;
   .appear {
     width: 100vw;
     border-left: 4px solid white;
-    transition: width 1s;
+    transition: width 0.7s;
   }
 
   .menulink {
