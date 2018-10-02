@@ -15,6 +15,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.4.2",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "url-parse": "^1.4.3"
   }
 }
